@@ -8,15 +8,13 @@ import java.util.Date;
 @Service
 public class FulfimentSourceService {
 
-    public String getFulfilmentSource(String productId, int qty) {
+    public String getFulfilmentSource(String productId) {
         return "Aditya Textile";
     }
 
-    public FulfilmentDates getFulfilmentDates(String productId, int qty, String fulfilmentSource) {
-        FulfilmentDates fulfilmentDates = new FulfilmentDates();
-        fulfilmentDates.setProductId(productId);
-        fulfilmentDates.setFromDate(new Date("30-04-2019"));
-        fulfilmentDates.setToDate(new Date("09-05-2019"));
-        return fulfilmentDates;
+
+
+    public boolean validateFulfilmentSource() {
+        return false;
     }
 }
