@@ -1,9 +1,8 @@
 package com.dworld.learn.orchestration.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter @Setter
+@Data
 public class ProductDetails {
     private String productId;
     private String productName;

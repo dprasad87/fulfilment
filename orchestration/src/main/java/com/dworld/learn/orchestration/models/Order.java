@@ -1,13 +1,12 @@
 package com.dworld.learn.orchestration.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
-@Getter @Setter
+@Data
 @Document(collection = "orders")
 public class Order {
 

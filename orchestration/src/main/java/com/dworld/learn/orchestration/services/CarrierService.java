@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Service
 public class CarrierService {
-    public FulfilmentDates getFulfilmentDates(String productId, int qty, String fulfilmentSource) {
+    public FulfilmentDates getFulfilmentDates(String productId, int qty, String source, String pincode) {
         FulfilmentDates fulfilmentDates = new FulfilmentDates();
         fulfilmentDates.setProductId(productId);
         fulfilmentDates.setFromDate(new Date("30-04-2019"));

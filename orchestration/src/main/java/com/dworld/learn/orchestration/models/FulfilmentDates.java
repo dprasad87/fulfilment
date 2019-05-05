@@ -1,11 +1,10 @@
 package com.dworld.learn.orchestration.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.Date;
 
-@Getter @Setter
+@Data
 public class FulfilmentDates {
     private String productId;
     private Date fromDate;

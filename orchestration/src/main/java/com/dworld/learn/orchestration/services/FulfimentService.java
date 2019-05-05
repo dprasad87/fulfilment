@@ -18,15 +18,22 @@ public class FulfimentService {
     CarrierService carrierService;
 
     public String getFulfilmentSource(String productId) {
+
         return "Aditya Textile";
     }
 
 
-
+    /**
+     * Validates if the product delivery is serviceable at the given pincode
+     * @return boolean
+     */
     public boolean validateFulfilmentSource() {
-        return false;
+        return true;
     }
 
+    /*
+
+     */
     public FulfilmentOptions getFulfilmentOptions(Order order) {
 
         FulfilmentOptions fulfilmentOptions = new FulfilmentOptions();

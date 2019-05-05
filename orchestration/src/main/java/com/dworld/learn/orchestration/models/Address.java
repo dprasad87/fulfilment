@@ -1,8 +1,10 @@
 package com.dworld.learn.orchestration.models;
 
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@Data
 @Document(collection = "addreses")
 public class Address {
     @Id
