@@ -39,6 +39,7 @@ public class FulfimentService {
         FulfilmentOptions fulfilmentOptions = new FulfilmentOptions();
         fulfilmentOptions.setOrderId(order.getOrderId());
         fulfilmentOptions.setProductDetails(productService.getProductDetails(order.getProductId()));
+        fulfilmentOptions.setProductId(order.getProductId());
         String fulfilmentSource = getFulfilmentSource(order.getProductId());
         if(validateFulfilmentSource()) {
             fulfilmentOptions.setFulfilmentSourceStatus(Constants.FULFILMENT_SOURCE_MATCH);

@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductService {
     public ProductDetails getProductDetails(String productId) {
-        return null;
+        return new ProductDetails(productId, "Some Product Name", "Some Product Desc", 1234l );
     }
 }

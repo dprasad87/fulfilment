@@ -19,8 +19,10 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
-    compile 'org.projectlombok:lombok:1.18.6'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
     compile 'io.springfox:springfox-swagger2:2.9.2'
     compile 'io.springfox:springfox-swagger-ui:2.9.2'
+//    compile 'org.slf4j:slf4j-simple:2.11.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
